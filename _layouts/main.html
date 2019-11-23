@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{ site.baseurl }}/scss/fontawesome/css/all.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">   
+        <title>{{ site.title }}</title>
+    </head>
+    <body class="page-{{ page.title | slugify }}">
+
+        <div class="site">
+             
+            {% include navigation-sticky.html %}
+
+
+        <header class="site-header">
+                 
+
+            <div class="site-branding">
+                <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+            </div>
+                
+                {% include navigation.html location="header" %}
+
+        </header>
+
+        <section class="site-media">
+             <img src="{{ site.baseurl }}/images/baner.jpeg" alt="">
+        </section>
+
+        <main class="site-main">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+
+        </main>
+
+        <footer class="site-footer">
+
+            
+
+            <p>{{ site.title }} &copy; All rights reserved!</p>
+
+        </footer>
+
+    </div>
+
+        
+
+</body>
+</html>
+
+

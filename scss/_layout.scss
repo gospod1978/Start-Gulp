@@ -1,0 +1,69 @@
+
+body {
+
+}
+
+.site {
+    max-width: var(--layout-width, 60em);
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header h1 {
+    padding-bottom: 0.5em;
+}
+
+.site-header h1 a {
+    text-decoration: none;
+    color: #3498db;
+
+}
+
+.site-header nav {
+
+}
+
+
+.site-main {
+
+}
+
+
+.site-footer {
+
+}
+
+.card {
+    border: 2px solid #CCC;
+}
+
+.card p {
+    display: none;
+}
+
+.card p:first-of-type {
+    display: block;
+}
+
+.card .button .less {
+    display: none;
+}
+
+input:checked + .card p {
+    display: block;
+}
+
+input:checked + .card .button .more {
+    display: none;
+}
+
+input:checked + .card .button .less {
+    display: inline;
+}
+
+
